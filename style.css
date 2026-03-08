@@ -151,3 +151,34 @@ p {
 .reset-btn:hover {
     background: #ff5c8a;
 }
+
+/* Hiệu ứng hoa rơi background */
+#flower-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Để không chặn cú click vào thiệp */
+    z-index: -1; /* Nằm dưới thiệp */
+    overflow: hidden;
+}
+
+.flower {
+    position: absolute;
+    color: #ffb7c5; /* Màu hoa anh đào/hồng nhạt */
+    user-select: none;
+    cursor: default;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10vh) translateX(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(110vh) translateX(100px) rotate(360deg);
+        opacity: 0.3;
+    }
+}
