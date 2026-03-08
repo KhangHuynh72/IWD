@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gửi Cậu - 8/3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="book">
+        <div class="page page1" id="p1" onclick="flipPage('p1')">
+            <div class="content">
+                <h2 class="title">HAPPY 8/3! 🌸</h2>
+                <div class="decoration">🎁</div>
+                <p>Cậu có một món quà nhỏ ở bên trong...</p>
+                <p class="hint">Click để mở thiệp</p>
+            </div>
+        </div>
+
+        <div class="page page2" id="p2" onclick="flipPage('p2')">
+            <div class="content">
+                <h3 class="back">Gửi người phụ nữ tuyệt vời!</h3>
+                <p>Chúc cậu một ngày 8/3 tràn đầy niềm vui, hạnh phúc và luôn rạng rỡ như những đóa hoa hướng dương.</p>
+                <p>Cảm ơn vì đã luôn là một phần tuyệt vời trong cuộc sống này!</p>
+                <p class="hint-next">Mở tiếp trang sau đi... 👉</p>
+            </div>
+        </div>
+
+        <div class="page page3">
+            <div class="content">
+                <h3>Và... một chuyện quan trọng</h3>
+                <p>Tui biết đôi khi tui hay trêu cậu hơi quá đà làm cậu bực mình. Cho tui xin lỗi nhé!</p>
+                <p>Tớ hứa từ nay sẽ "tiết chế" lại, chỉ trêu cậu 3 phần thôi, còn 7 phần để yêu quý.</p>
+                <p>Thật lòng đó! Hết giận tui nha? 🥺</p>
+                <p>Mong cậu một ngày 8/3 thật rạng rỡ. Tui hứa từ nay sẽ "ngoan" hơn một chút!</p>
+                <div class="heart">❤️</div>
+                <button class="reset-btn" onclick="resetBook(event)">Đóng thiệp</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
